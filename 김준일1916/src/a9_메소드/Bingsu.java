@@ -2,6 +2,8 @@ package a9_메소드;
 
 public class Bingsu {
 	
+	int numbers;
+	
 	String toMake(String material, int materialCount, String material2) {
 		String bingsu = material + materialCount + "개와 " + material2 + "가 들어간 빙수";
 		return bingsu;
