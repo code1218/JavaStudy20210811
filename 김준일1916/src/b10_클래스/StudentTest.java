@@ -3,20 +3,17 @@ package b10_클래스;
 public class StudentTest {
 
 	public static void main(String[] args) {
-		Student kim = new Student(); //생성자 -> 클래스명과 같다.
-		
-		kim.name = "김재성";
-		
-		kim.showInfo();
-
+		Student kim = new Student("김준일", 4);
 		Student lee = new Student();
 		
-		lee.name = "이효원";
+		//kim.name = "김준일"; //   .은 해당 메모리 주소값을 참조한다라고 한다.
 		
-		lee.showInfo();
+		kim.showInfo();
 		
-		System.out.println(kim);
-		System.out.println(lee);
+		Integer i = new Integer(100);
+		
+		System.out.println(kim.hashCode());
+		System.out.println(i.hashCode());
 	}
 
 }
