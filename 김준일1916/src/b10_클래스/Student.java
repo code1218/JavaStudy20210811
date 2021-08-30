@@ -51,6 +51,18 @@ public class Student {
 	public void setYear(int year) {
 		this.year = year;
 	}
+	
+	public void getFreebies() {
+		Regular regular = new Regular();
+		
+		regular.setYaerCheck(year, schoolName);
+		
+		if(regular.isYaerCheck()) {
+			System.out.println("사은품 대상자");
+		}else {
+			System.out.println("대상자 제외");
+		}
+	}
 
 	public void showInfo() {
 		System.out.println("학생 정보");
