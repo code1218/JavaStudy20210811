@@ -6,7 +6,7 @@ public class S_Test {
 	Student park = new Student();
 	
 	public S_Test() {
-		park.schoolName = "코리아아이티";
+		park.setSchoolName("코리아아이티");
 	}
 
 }
