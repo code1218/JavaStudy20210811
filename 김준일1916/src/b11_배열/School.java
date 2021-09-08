@@ -16,5 +16,6 @@ public class School {
 		cg[0].classInfo(20210003);
 		
 		
+		
 	}
 }
