@@ -15,6 +15,12 @@ public class Animals {
 		a[1] = new Tiger();
 		a[2] = new Eagle();
 		
+		for(int i = 0; i < a.length; i++) {
+			Animal ani = a[i];
+			a[i].move();
+			ani.move();
+		}
+		
 		for(Animal ani : a) {
 			ani.move();
 		}
