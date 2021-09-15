@@ -1,5 +1,8 @@
 package b18_컬렉션;
 
+import java.util.Collection;
+import java.util.List;
+
 /**
  * 
  * 컬렉션(Colection)
@@ -13,5 +16,15 @@ package b18_컬렉션;
 
 
 public class Colection {
-	
+	Collection<String> c;
+	List<String> l;
 }
+
+
+
+
+
+
+
+
+
