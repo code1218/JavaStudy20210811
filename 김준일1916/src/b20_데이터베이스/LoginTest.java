@@ -1,5 +1,7 @@
 package b20_데이터베이스;
 
+import java.sql.SQLException;
+import java.sql.SQLSyntaxErrorException;
 import java.util.Scanner;
 
 public class LoginTest {
@@ -17,7 +19,8 @@ public class LoginTest {
 			System.out.print("비밀번호: ");
 			String password = input.nextLine();
 			
-			int flag = loginDao.login(id, password);
+			int flag = 0;
+			flag = loginDao.login(id, password);
 			
 			if(flag == 0) {
 				System.out.println("존재하지 않는 아이디 입니다.");
