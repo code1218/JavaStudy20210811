@@ -30,13 +30,16 @@ CREATE TABLE IF NOT EXISTS `user_mst` (
   PRIMARY KEY (`user_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 
--- 테이블 데이터 swing.user_mst:~0 rows (대략적) 내보내기
+-- 테이블 데이터 swing.user_mst:~6 rows (대략적) 내보내기
 DELETE FROM `user_mst`;
 /*!40000 ALTER TABLE `user_mst` DISABLE KEYS */;
 INSERT INTO `user_mst` (`user_id`, `user_password`, `user_name`, `user_phone`, `user_email`, `user_gender`, `create_date`, `update_date`) VALUES
-	('junil', '1234', '김준일', '010-9988-1916', 'skjil1218@gmail.com', 1, '2021-09-24', '2021-09-24'),
-	('junil2', '1234', '김준일', '010-9988-1916', 'skjil1218@gmail.com', 1, '2021-09-24', '2021-09-24'),
-	('junil3', '1234', '김준일', '010-9988-1916', 'skjil1218@gmail.com', 1, '2021-09-24', '2021-09-24');
+	('aaaa', '1234', '김준일', '01099881916', 'skjil1218@gmail.com', 1, '2021-10-06', '2021-10-06'),
+	('junil', '1234', '김준일', '010-1234-9999', 'junil@naver.com', 2, '2021-09-24', '2021-09-24'),
+	('junil123', '1234', '김준일', '01099881916', 'skjil1218@gmail.com', 1, '2021-10-06', '2021-10-06'),
+	('junil2', '677889', '김준일', '010-1234-9999', 'junil@naver.com', 2, '2021-09-24', '2021-09-24'),
+	('junil5', '123456789', '김준오', '010-1234-9999', 'skjil1218@kakao.com', 1, '2021-09-27', '2021-09-27'),
+	('junil6', '123456789', '김준육', '010-1234-9999', 'skjil1218@kakao.com', 1, '2021-09-27', '2021-09-27');
 /*!40000 ALTER TABLE `user_mst` ENABLE KEYS */;
 
 /*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
